@@ -11,20 +11,11 @@
             <div class="col-12">
                 <div class="page-title-box">
                     <div class="page-title-right">
-                        <form class="d-flex align-items-center mb-3">
-                            <div class="input-group input-group-sm">
-                                <input type="text" class="form-control border" id="dash-daterange">
-                                <span class="input-group-text bg-blue border-blue text-white">
-                                    <i class="mdi mdi-calendar-range"></i>
-                                </span>
-                            </div>
-                            <a href="javascript: void(0);" class="btn btn-blue btn-sm ms-2">
-                                <i class="mdi mdi-autorenew"></i>
-                            </a>
-                            <a href="javascript: void(0);" class="btn btn-blue btn-sm ms-1">
-                                <i class="mdi mdi-filter-variant"></i>
-                            </a>
-                        </form>
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Ecommerce</a></li>
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
                     </div>
                     <h4 class="page-title">Dashboard</h4>
                 </div>
@@ -38,13 +29,14 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-6">
-                                <div class="avatar-lg rounded-circle bg-soft-primary border-primary border">
-                                    <i class="fe-heart font-22 avatar-title text-primary"></i>
+                                <div class="avatar-lg rounded bg-soft-primary">
+                                    <i class="dripicons-wallet font-24 avatar-title text-primary"></i>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="text-end">
-                                    <h3 class="text-dark mt-1">$<span data-plugin="counterup">58,947</span></h3>
+                                    <h3 class="text-dark mt-1">$<span
+                                            data-plugin="counterup">58,947</span></h3>
                                     <p class="text-muted mb-1 text-truncate">Total Revenue</p>
                                 </div>
                             </div>
@@ -58,14 +50,15 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-6">
-                                <div class="avatar-lg rounded-circle bg-soft-success border-success border">
-                                    <i class="fe-shopping-cart font-22 avatar-title text-success"></i>
+                                <div class="avatar-lg rounded bg-soft-success">
+                                    <i class="dripicons-basket font-24 avatar-title text-success"></i>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="text-end">
-                                    <h3 class="text-dark mt-1"><span data-plugin="counterup">127</span></h3>
-                                    <p class="text-muted mb-1 text-truncate">Today's Sales</p>
+                                    <h3 class="text-dark mt-1"><span data-plugin="counterup">1,845</span>
+                                    </h3>
+                                    <p class="text-muted mb-1 text-truncate">Orders</p>
                                 </div>
                             </div>
                         </div> <!-- end row-->
@@ -78,14 +71,15 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-6">
-                                <div class="avatar-lg rounded-circle bg-soft-info border-info border">
-                                    <i class="fe-bar-chart-line- font-22 avatar-title text-info"></i>
+                                <div class="avatar-lg rounded bg-soft-info">
+                                    <i class="dripicons-store font-24 avatar-title text-info"></i>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="text-end">
-                                    <h3 class="text-dark mt-1"><span data-plugin="counterup">0.58</span>%</h3>
-                                    <p class="text-muted mb-1 text-truncate">Conversion</p>
+                                    <h3 class="text-dark mt-1"><span data-plugin="counterup">825</span>
+                                    </h3>
+                                    <p class="text-muted mb-1 text-truncate">Stores</p>
                                 </div>
                             </div>
                         </div> <!-- end row-->
@@ -98,14 +92,15 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-6">
-                                <div class="avatar-lg rounded-circle bg-soft-warning border-warning border">
-                                    <i class="fe-eye font-22 avatar-title text-warning"></i>
+                                <div class="avatar-lg rounded bg-soft-warning">
+                                    <i class="dripicons-user-group font-24 avatar-title text-warning"></i>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="text-end">
-                                    <h3 class="text-dark mt-1"><span data-plugin="counterup">78.41</span>k</h3>
-                                    <p class="text-muted mb-1 text-truncate">Today's Visits</p>
+                                    <h3 class="text-dark mt-1"><span data-plugin="counterup">2,430</span>
+                                    </h3>
+                                    <p class="text-muted mb-1 text-truncate">Sellers</p>
                                 </div>
                             </div>
                         </div> <!-- end row-->
@@ -113,14 +108,60 @@
                 </div> <!-- end widget-rounded-circle-->
             </div> <!-- end col-->
         </div>
-        <!-- end row-->
+        <!-- end row -->
 
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-xl-8">
+                <div class="card">
+                    <div class="card-body pb-2">
+                        <div class="float-end d-none d-md-inline-block">
+                            <div class="btn-group mb-2">
+                                <button type="button" class="btn btn-xs btn-light">Today</button>
+                                <button type="button" class="btn btn-xs btn-light">Weekly</button>
+                                <button type="button" class="btn btn-xs btn-secondary">Monthly</button>
+                            </div>
+                        </div>
+
+                        <h4 class="header-title mb-3">Sales Analytics</h4>
+
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <p class="text-muted mb-0 mt-3">Current Week</p>
+                                <h2 class="fw-normal mb-3">
+                                    <small
+                                        class="mdi mdi-checkbox-blank-circle text-primary align-middle me-1"></small>
+                                    <span>$58,254</span>
+                                </h2>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="text-muted mb-0 mt-3">Previous Week</p>
+                                <h2 class="fw-normal mb-3">
+                                    <small
+                                        class="mdi mdi-checkbox-blank-circle text-success align-middle me-1"></small>
+                                    <span>$69,524</span>
+                                </h2>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="text-muted mb-0 mt-3">Targets</p>
+                                <h2 class="fw-normal mb-3">
+                                    <small
+                                        class="mdi mdi-checkbox-blank-circle text-success align-middle me-1"></small>
+                                    <span>$95,025</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div id="revenue-chart" class="apex-charts mt-3" data-colors="#6658dd,#1abc9c">
+                        </div>
+                    </div>
+                </div> <!-- end card -->
+            </div> <!-- end col-->
+
+            <div class="col-xl-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="dropdown float-end">
-                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="#" class="dropdown-toggle arrow-none card-drop"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="mdi mdi-dots-vertical"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
@@ -139,14 +180,15 @@
 
                         <div class="widget-chart text-center" dir="ltr">
 
-                            <div id="total-revenue" class="mt-0" data-colors="#f1556c"></div>
+                            <div id="world-map-markers" style="height: 230px" class="mt-4"></div>
 
-                            <h5 class="text-muted mt-0">Total sales made today</h5>
+                            <h5 class="text-muted mt-4">Total sales made today</h5>
                             <h2>$178</h2>
 
-                            <p class="text-muted w-75 mx-auto sp-line-2">Traditional heading elements are designed to work best in the meat of your page content.</p>
+                            <p class="text-muted w-75 mx-auto sp-line-2">Traditional heading elements are
+                                designed to work best in the meat of your page content.</p>
 
-                            <div class="row mt-3">
+                            <div class="row mt-4">
                                 <div class="col-4">
                                     <p class="text-muted font-15 mb-1 text-truncate">Target</p>
                                     <h4><i class="fe-arrow-down text-danger me-1"></i>$7.8k</h4>
@@ -160,385 +202,213 @@
                                     <h4><i class="fe-arrow-down text-danger me-1"></i>$15k</h4>
                                 </div>
                             </div>
-
-                        </div>
-                    </div>
-                </div> <!-- end card -->
-            </div> <!-- end col-->
-
-            <div class="col-lg-8">
-                <div class="card">
-                    <div class="card-body pb-2">
-                        <div class="float-end d-none d-md-inline-block">
-                            <div class="btn-group mb-2">
-                                <button type="button" class="btn btn-xs btn-light">Today</button>
-                                <button type="button" class="btn btn-xs btn-light">Weekly</button>
-                                <button type="button" class="btn btn-xs btn-secondary">Monthly</button>
-                            </div>
-                        </div>
-
-                        <h4 class="header-title mb-3">Sales Analytics</h4>
-
-                        <div dir="ltr">
-                            <div id="sales-analytics" class="mt-4" data-colors="#1abc9c,#4a81d4"></div>
                         </div>
                     </div>
                 </div> <!-- end card -->
             </div> <!-- end col-->
         </div>
         <!-- end row -->
+
 
         <div class="row">
             <div class="col-xl-6">
                 <div class="card">
                     <div class="card-body">
-                        <div class="dropdown float-end">
-                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="mdi mdi-dots-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item">Edit Report</a>
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                            </div>
-                        </div>
-
-                        <h4 class="header-title mb-3">Top 5 Users Balances</h4>
+                        <h4 class="header-title mb-3">Transaction History</h4>
 
                         <div class="table-responsive">
-                            <table class="table table-borderless table-hover table-nowrap table-centered m-0">
-
-                                <thead class="table-light">
+                            <table class="table table-centered table-nowrap table-hover mb-0">
+                                <thead>
                                     <tr>
-                                        <th colspan="2">Profile</th>
-                                        <th>Currency</th>
-                                        <th>Balance</th>
-                                        <th>Reserved in orders</th>
-                                        <th>Action</th>
+                                        <th class="border-top-0">Name</th>
+                                        <th class="border-top-0">Card</th>
+                                        <th class="border-top-0">Date</th>
+                                        <th class="border-top-0">Amount</th>
+                                        <th class="border-top-0">Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="width: 36px;">
-                                            <img src="assets/images/users/user-2.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
-                                        </td>
-
                                         <td>
-                                            <h5 class="m-0 fw-normal">Tomaslau</h5>
-                                            <p class="mb-0 text-muted"><small>Member Since 2017</small></p>
+                                            <img src="assets/images/users/user-2.jpg" alt="user-pic"
+                                                class="rounded-circle avatar-sm bx-shadow-lg" />
+                                            <span class="ms-2">Imelda J. Stanberry</span>
                                         </td>
-
                                         <td>
-                                            <i class="mdi mdi-currency-btc text-primary"></i> BTC
+                                            <img src="assets/images/cards/visa.png" alt="user-card"
+                                                height="24" />
+                                            <span class="ms-2">**** 3256</span>
                                         </td>
-
-                                        <td>
-                                            0.00816117 BTC
-                                        </td>
-
-                                        <td>
-                                            0.00097036 BTC
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-plus"></i></a>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-minus"></i></a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td style="width: 36px;">
-                                            <img src="assets/images/users/user-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
-                                        </td>
-
-                                        <td>
-                                            <h5 class="m-0 fw-normal">Erwin E. Brown</h5>
-                                            <p class="mb-0 text-muted"><small>Member Since 2017</small></p>
-                                        </td>
-
-                                        <td>
-                                            <i class="mdi mdi-currency-eth text-primary"></i> ETH
-                                        </td>
-
-                                        <td>
-                                            3.16117008 ETH
-                                        </td>
-
-                                        <td>
-                                            1.70360009 ETH
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-plus"></i></a>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-minus"></i></a>
-                                        </td>
+                                        <td>27.03.2018</td>
+                                        <td>$345.98</td>
+                                        <td><span class="badge rounded-pill bg-danger">Failed</span></td>
                                     </tr>
                                     <tr>
-                                        <td style="width: 36px;">
-                                            <img src="assets/images/users/user-4.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
-                                        </td>
-
                                         <td>
-                                            <h5 class="m-0 fw-normal">Margeret V. Ligon</h5>
-                                            <p class="mb-0 text-muted"><small>Member Since 2017</small></p>
+                                            <img src="assets/images/users/user-3.jpg" alt="user-pic"
+                                                class="rounded-circle avatar-sm bx-shadow-lg" />
+                                            <span class="ms-2">Francisca S. Lobb</span>
                                         </td>
-
                                         <td>
-                                            <i class="mdi mdi-currency-eur text-primary"></i> EUR
+                                            <img src="assets/images/cards/master.png" alt="user-card"
+                                                height="24" />
+                                            <span class="ms-2">**** 8451</span>
                                         </td>
-
-                                        <td>
-                                            25.08 EUR
-                                        </td>
-
-                                        <td>
-                                            12.58 EUR
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-plus"></i></a>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-minus"></i></a>
-                                        </td>
+                                        <td>28.03.2018</td>
+                                        <td>$1,250</td>
+                                        <td><span class="badge rounded-pill bg-success">Paid</span></td>
                                     </tr>
                                     <tr>
-                                        <td style="width: 36px;">
-                                            <img src="assets/images/users/user-5.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
-                                        </td>
-
                                         <td>
-                                            <h5 class="m-0 fw-normal">Jose D. Delacruz</h5>
-                                            <p class="mb-0 text-muted"><small>Member Since 2017</small></p>
+                                            <img src="assets/images/users/user-1.jpg" alt="user-pic"
+                                                class="rounded-circle avatar-sm bx-shadow-lg" />
+                                            <span class="ms-2">James A. Wert</span>
                                         </td>
-
                                         <td>
-                                            <i class="mdi mdi-currency-cny text-primary"></i> CNY
+                                            <img src="assets/images/cards/amazon.png" alt="user-card"
+                                                height="24" />
+                                            <span class="ms-2">**** 2258</span>
                                         </td>
-
-                                        <td>
-                                            82.00 CNY
-                                        </td>
-
-                                        <td>
-                                            30.83 CNY
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-plus"></i></a>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-minus"></i></a>
-                                        </td>
+                                        <td>28.03.2018</td>
+                                        <td>$145</td>
+                                        <td><span class="badge rounded-pill bg-success">Paid</span></td>
                                     </tr>
                                     <tr>
-                                        <td style="width: 36px;">
-                                            <img src="assets/images/users/user-6.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
-                                        </td>
-
                                         <td>
-                                            <h5 class="m-0 fw-normal">Luke J. Sain</h5>
-                                            <p class="mb-0 text-muted"><small>Member Since 2017</small></p>
+                                            <img src="assets/images/users/user-4.jpg" alt="user-pic"
+                                                class="rounded-circle avatar-sm bx-shadow-lg" />
+                                            <span class="ms-2">Dolores J. Pooley</span>
                                         </td>
-
                                         <td>
-                                            <i class="mdi mdi-currency-btc text-primary"></i> BTC
+                                            <img src="assets/images/cards/american-express.png"
+                                                alt="user-card" height="24" />
+                                            <span class="ms-2">**** 6950</span>
                                         </td>
-
-                                        <td>
-                                            2.00816117 BTC
-                                        </td>
-
-                                        <td>
-                                            1.00097036 BTC
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-plus"></i></a>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-danger"><i class="mdi mdi-minus"></i></a>
-                                        </td>
+                                        <td>29.03.2018</td>
+                                        <td>$2,005.89</td>
+                                        <td><span class="badge rounded-pill bg-danger">Failed</span></td>
                                     </tr>
-
+                                    <tr>
+                                        <td>
+                                            <img src="assets/images/users/user-5.jpg" alt="user-pic"
+                                                class="rounded-circle avatar-sm bx-shadow-lg" />
+                                            <span class="ms-2">Karen I. McCluskey</span>
+                                        </td>
+                                        <td>
+                                            <img src="assets/images/cards/discover.png" alt="user-card"
+                                                height="24" />
+                                            <span class="ms-2">**** 0021</span>
+                                        </td>
+                                        <td>31.03.2018</td>
+                                        <td>$24.95</td>
+                                        <td><span class="badge rounded-pill bg-success">Paid</span></td>
+                                    </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </div> <!-- end table-responsive -->
                     </div>
-                </div>
-            </div> <!-- end col -->
-
+                </div> <!-- end card-->
+            </div> <!-- end col-->
             <div class="col-xl-6">
                 <div class="card">
                     <div class="card-body">
-                        <div class="dropdown float-end">
-                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="mdi mdi-dots-vertical"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item">Edit Report</a>
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                            </div>
-                        </div>
-
-                        <h4 class="header-title mb-3">Revenue History</h4>
+                        <h4 class="header-title mb-3">Recent Products</h4>
 
                         <div class="table-responsive">
-                            <table class="table table-borderless table-nowrap table-hover table-centered m-0">
-
-                                <thead class="table-light">
+                            <table class="table table-centered table-nowrap table-hover mb-0">
+                                <thead>
                                     <tr>
-                                        <th>Marketplaces</th>
-                                        <th>Date</th>
-                                        <th>Payouts</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
+                                        <th class="border-top-0">Product</th>
+                                        <th class="border-top-0">Category</th>
+                                        <th class="border-top-0">Added Date</th>
+                                        <th class="border-top-0">Amount</th>
+                                        <th class="border-top-0">Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <h5 class="m-0 fw-normal">Themes Market</h5>
+                                            <img src="assets/images/products/product-1.png"
+                                                alt="product-pic" height="36" />
+                                            <span class="ms-2">Adirondack Chair</span>
                                         </td>
-
                                         <td>
-                                            Oct 15, 2018
+                                            Dining Chairs
                                         </td>
-
-                                        <td>
-                                            $5848.68
-                                        </td>
-
-                                        <td>
-                                            <span class="badge bg-soft-warning text-warning">Upcoming</span>
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
+                                        <td>27.03.2018</td>
+                                        <td>$345.98</td>
+                                        <td><span class="badge bg-soft-success text-success">Active</span>
                                         </td>
                                     </tr>
-
                                     <tr>
                                         <td>
-                                            <h5 class="m-0 fw-normal">Freelance</h5>
+                                            <img src="assets/images/products/product-2.png"
+                                                alt="product-pic" height="36" />
+                                            <span class="ms-2">Biblio Plastic Armchair</span>
                                         </td>
-
                                         <td>
-                                            Oct 12, 2018
+                                            Baby Chairs
                                         </td>
-
-                                        <td>
-                                            $1247.25
-                                        </td>
-
-                                        <td>
-                                            <span class="badge bg-soft-success text-success">Paid</span>
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
+                                        <td>28.03.2018</td>
+                                        <td>$1,250</td>
+                                        <td><span class="badge bg-soft-success text-success">Active</span>
                                         </td>
                                     </tr>
-
                                     <tr>
                                         <td>
-                                            <h5 class="m-0 fw-normal">Share Holding</h5>
+                                            <img src="assets/images/products/product-3.png"
+                                                alt="product-pic" height="36" />
+                                            <span class="ms-2">Amazing Modern Chair</span>
                                         </td>
-
                                         <td>
-                                            Oct 10, 2018
+                                            Plastic Armchair
                                         </td>
-
-                                        <td>
-                                            $815.89
-                                        </td>
-
-                                        <td>
-                                            <span class="badge bg-soft-success text-success">Paid</span>
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
+                                        <td>28.03.2018</td>
+                                        <td>$145</td>
+                                        <td><span class="badge bg-soft-danger text-danger">Deactive</span>
                                         </td>
                                     </tr>
-
                                     <tr>
                                         <td>
-                                            <h5 class="m-0 fw-normal">Envato's Affiliates</h5>
+                                            <img src="assets/images/products/product-4.png"
+                                                alt="product-pic" height="36" />
+                                            <span class="ms-2">Designer Awesome Chair</span>
                                         </td>
-
                                         <td>
-                                            Oct 03, 2018
+                                            Wing Chairs
                                         </td>
-
-                                        <td>
-                                            $248.75
-                                        </td>
-
-                                        <td>
-                                            <span class="badge bg-soft-danger text-danger">Overdue</span>
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
+                                        <td>29.03.2018</td>
+                                        <td>$2,005.89</td>
+                                        <td><span class="badge bg-soft-success text-success">Active</span>
                                         </td>
                                     </tr>
-
                                     <tr>
                                         <td>
-                                            <h5 class="m-0 fw-normal">Marketing Revenue</h5>
+                                            <img src="assets/images/products/product-5.png"
+                                                alt="product-pic" height="36" />
+                                            <span class="ms-2">The butterfly chair</span>
                                         </td>
-
                                         <td>
-                                            Sep 21, 2018
+                                            Plastic Armchair
                                         </td>
-
-                                        <td>
-                                            $978.21
-                                        </td>
-
-                                        <td>
-                                            <span class="badge bg-soft-warning text-warning">Upcoming</span>
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <h5 class="m-0 fw-normal">Advertise Revenue</h5>
-                                        </td>
-
-                                        <td>
-                                            Sep 15, 2018
-                                        </td>
-
-                                        <td>
-                                            $358.10
-                                        </td>
-
-                                        <td>
-                                            <span class="badge bg-soft-success text-success">Paid</span>
-                                        </td>
-
-                                        <td>
-                                            <a href="javascript: void(0);" class="btn btn-xs btn-light"><i class="mdi mdi-pencil"></i></a>
+                                        <td>31.03.2018</td>
+                                        <td>$24.95</td>
+                                        <td><span class="badge bg-soft-success text-success">Active</span>
                                         </td>
                                     </tr>
 
                                 </tbody>
                             </table>
-                        </div> <!-- end .table-responsive-->
+                        </div> <!-- end table-responsive -->
                     </div>
                 </div> <!-- end card-->
-            </div> <!-- end col -->
+            </div> <!-- end col-->
         </div>
-        <!-- end row -->
+        <!-- end row-->
 
     </div> <!-- container -->
 
-</div>
+</div> <!-- content -->
+
+
 @endsection

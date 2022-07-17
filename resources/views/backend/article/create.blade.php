@@ -1,6 +1,5 @@
-@include('backend.mainpage')
+@extends('backend.mainpage')
 @section('content')
-<div class="content-page">
     <div class="content">
         <div class="row">
             <div class="col-lg-6">
@@ -145,6 +144,4 @@
 
     </div>
     <!-- container -->
-
-</div>
 @endsection
