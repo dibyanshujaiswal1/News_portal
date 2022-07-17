@@ -13,12 +13,15 @@
     <meta content="Coderthemes" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="asset/images/favicon.ico">
 
     <!-- Plugins css -->
     <link href="{{asset('backend/libs/flatpickr/flatpickr.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('backend/libs/selectize/css/selectize.bootstrap3.css')}}" rel="stylesheet" type="text/css" />
-
+    <link href="{{asset('backend/libs/select2/css/select2.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('backend/libs/dropzone/min/dropzone.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('backend/libs/quill/quill.core.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('backend/libs/quill/quill.snow.css')}}" rel="stylesheet" type="text/css" />
     <!-- Bootstrap css -->
     <link href="{{asset('backend/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- App css -->
@@ -132,7 +135,7 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-10.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="asset/images/users/user-10.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status online"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -147,7 +150,7 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-1.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="asset/images/users/user-1.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status away"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -162,7 +165,7 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-9.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="asset/images/users/user-9.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status busy"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -181,7 +184,7 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-2.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="asset/images/users/user-2.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status online"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -196,7 +199,7 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-4.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="asset/images/users/user-4.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status away"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -211,7 +214,7 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-5.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="asset/images/users/user-5.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status online"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -226,7 +229,7 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-6.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="asset/images/users/user-6.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status online"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -241,7 +244,7 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-7.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="asset/images/users/user-7.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status busy"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -256,7 +259,7 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-8.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    <img src="asset/images/users/user-8.jpg" class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status away"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -473,6 +476,18 @@
 
     <!-- App js-->
     <script src="{{asset('backend/js/app.min.js')}}"></script>
+    <script src="{{asset('backend/libs/select2/js/select2.min.js')}}"></script>
+    <!-- Dropzone file uploads-->
+    <script src="{{asset('backend/libs/dropzone/min/dropzone.min.js')}}"></script>
+
+    <!-- Quill js -->
+    <script src="{{asset('backend/libs/quill/quill.min.js')}}"></script>
+
+    <!-- Init js-->
+    <script src="{{asset('backend/js/pages/form-fileuploads.init.js')}}"></script>
+
+    <!-- Init js -->
+    <script src="{{asset('backend/js/pages/add-product.init.js')}}"></script>
 
 </body>
 

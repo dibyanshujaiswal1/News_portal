@@ -88,40 +88,13 @@
             <li>
                 <a href="#sidebarEcommerce" data-bs-toggle="collapse">
                     <i data-feather="shopping-cart"></i>
-                    <span> Ecommerce </span>
+                    <span> CMS </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <div class="collapse" id="sidebarEcommerce">
                     <ul class="nav-second-level">
                         <li>
-                            <a href="ecommerce-dashboard.html">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="ecommerce-products.html">Products</a>
-                        </li>
-                        <li>
-                            <a href="ecommerce-product-detail.html">Product Detail</a>
-                        </li>
-                        <li>
-                            <a href="ecommerce-product-edit.html">Add Product</a>
-                        </li>
-                        <li>
-                            <a href="ecommerce-customers.html">Customers</a>
-                        </li>
-                        <li>
-                            <a href="ecommerce-orders.html">Orders</a>
-                        </li>
-                        <li>
-                            <a href="ecommerce-order-detail.html">Order Detail</a>
-                        </li>
-                        <li>
-                            <a href="ecommerce-sellers.html">Sellers</a>
-                        </li>
-                        <li>
-                            <a href="ecommerce-cart.html">Shopping Cart</a>
-                        </li>
-                        <li>
-                            <a href="ecommerce-checkout.html">Checkout</a>
+                            <a href="{{url('create-article')}}">Create Article</a>
                         </li>
                     </ul>
                 </div>
