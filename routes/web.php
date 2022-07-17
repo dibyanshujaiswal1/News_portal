@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController\ArticleController;
 use App\Http\Controllers\AdminController\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('admin/dashboard',[DashboardController::class,'Dashboard']);
+//Article
+Route::get('create-article',[ArticleController::class,'CreateArticle']);

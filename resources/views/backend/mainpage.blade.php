@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <!-- Mirrored from coderthemes.com/ubold/layouts/default/ecommerce-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Jul 2022 07:08:02 GMT -->
 
 <head>
@@ -12,7 +10,7 @@
     <meta content="Coderthemes" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="{{asset('backend/images/favicon.ico')}}">
 
     <!-- plugin css -->
     <link href="{{asset('backend/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet"
@@ -25,7 +23,7 @@
     <!-- icons -->
     <link href="{{asset('backend/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- Head js -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <
 
         <!-- Plugins css-->
         <link href="{{asset('backend/libs/select2/css/select2.min.css')}}" rel="stylesheet" type="text/css" />
@@ -95,6 +93,7 @@
 
     <!-- App js -->
     <script src="{{asset('backend/js/app.min.js')}}"></script>
+   
 
     <!-- Select2 js-->
     <script src="{{asset('backend/libs/select2/js/select2.min.js')}}"></script>
